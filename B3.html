@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sky = [];
+    let tb = 0
+    for (let i = 0; i < 10; i++) {
+        let a = +prompt("Nhập số")
+        sky.push(a);
+    }
+    let max = sky[0];
+    for (let i = 1; i < 10; i++) {
+        if (sky[i] > max) {
+            max = sky[i]
+        }
+    }
+    for (let i = 0; i < 10; i++) {
+        tb += sky[i];
+    }
+    alert("Số lớn nhất: " + max + " ở phần tử: " + (sky.indexOf(max) + 1) + " giá trị trung bình: " + tb/sky.length)
+</script>
+</body>
+</html>
